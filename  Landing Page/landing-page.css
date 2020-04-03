@@ -1,0 +1,97 @@
+/* NAV*/
+
+.header {
+    padding-top: .5em;
+    padding-bottom: .5em;
+    background-color: grey;
+}
+
+.logo {
+    margin: 0;
+    font-size: 1.45em;
+}
+
+.main-nav {
+    margin-top: 5px;
+}
+
+.main-nav a {
+    color: black;
+    font-size: .99em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo a, .main-nav a {
+    padding: 10px 15px;
+    text-align: center;
+    display: block;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/*MAIN PAGE*/
+
+.main-page-content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 44px;
+    padding-top: 30px;
+    padding-bottom: 0px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+
+/*Product Feature*/
+
+section {
+    min-height: 200px;
+    padding: 6% 0;
+    background-color: #bbb;
+    margin: 10px;
+}
+
+@media (min-width: 769px) {
+
+    .header,
+    .main-nav {
+        display: flex;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+
+        .header {
+            width: 80%;
+            margin: 0 auto;
+            max-width: 1150px;
+        }
+    }
+}
+
+@media (min-width: 1025px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}
